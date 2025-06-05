@@ -1,0 +1,3 @@
+altere todos os links de cta para este https://pay.braip.co/checkout/plaovde2/chek9k4p para abrir em novo navegador.
+todos os botoes de cta devera ser substituido o URL para este https://pay.braip.co/checkout/plaovde2/chek9k4p
+remova os url dos botoes de cta.

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosa VIP Fornecedores - Acesso Exclusivo para Lojistas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        .pulse-button {
+            animation: pulse 2s infinite;
+        }
+        .flashing {
+            animation: flash 1.5s infinite;
+        }
+        @keyframes flash {
+            0% { opacity: 1; }
+            50% { opacity: 0.7; }
+            100% { opacity: 1; }
+        }
+        .countdown {
+            font-family: 'Courier New', monospace;
+        }
+    </style>
+</head>
+<body class="bg-white font-sans">
+    <!-- Header with Countdown Timer -->
+    <header class="bg-pink-600 text-white py-2 px-4 text-center flashing">
+        <div class="container mx-auto flex justify-between items-center">
+            <span class="font-bold">⚠️ ÚLTIMAS VAGAS!</span>
+            <div class="countdown font-bold">
+                PROMOÇÃO TERMINA EM: <span id="timer">00:59:59</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-b from-pink-50 to-white py-12 px-4">
+        <div class="container mx-auto max-w-4xl text-center">
+            <div class="bg-pink-100 border-l-4 border-pink-600 text-pink-800 p-4 mb-6 rounded-r-lg">
+                <span class="font-bold">🔓 ACESSO VIP LIBERADO!</span> Descubra o Guia Exclusivo que Conecta Lojistas aos Melhores Fornecedores de Moda do Brasil
+            </div>
+            
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                <span class="bg-pink-600 text-white px-2">O Segredo dos Lojistas de Sucesso</span>
+            </h1>
+            
+            <h2 class="text-xl md:text-2xl text-gray-800 mb-8">
+                <span class="font-bold">⚠️ ATENÇÃO, EMPREENDEDOR!</span> Se você quer comprar direto da fábrica com até 70% de desconto, evitar golpes e ter acesso a +500 fornecedores verificados, esse guia é para VOCÊ!
+            </h2>
+            
+            <div class="bg-yellow-50 border border-yellow-300 rounded-lg p-4 mb-8">
+                <p class="text-lg font-bold text-pink-700">Só HOJE com 4 BÔNUS EXCLUSIVOS!</p>
+                <p class="text-gray-800">De <span class="line-through">R$97</span> por apenas <span class="text-2xl font-bold text-pink-600">R$47</span></p>
+            </div>
+            
+            <div class="relative mb-8">
+                <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                     alt="Mulher feliz com compras" 
+                     class="w-full h-64 md:h-96 object-cover rounded-lg shadow-lg">
+                <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4 text-white rounded-b-lg">
+                    <p class="text-sm md:text-base">"Comprei um vestido por R$15 e revendi por R$120! Esse guia mudou meu negócio!" – Carla S., MG</p>
+                </div>
+            </div>
+            
+            <a href="#" class="inline-block bg-pink-600 hover:bg-pink-700 text-white font-bold py-4 px-8 rounded-full pulse-button text-lg transition-all duration-300 transform hover:scale-105 mb-6">
+                🔥 QUERO MEU ACESSO VIP AGORA! (R$47) 🔥
+            </a>
+            
+            <div class="bg-pink-100 border border-pink-300 rounded-lg p-3 inline-block">
+                <p class="text-pink-800 font-bold"><i class="fas fa-shield-alt text-pink-600 mr-2"></i> Garantia de 7 dias ou seu dinheiro de volta!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-12 px-4 bg-white">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-8">
+                <span class="border-b-4 border-pink-600 pb-2">O QUE VOCÊ VAI RECEBER</span>
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-6 mb-12">
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                    <div class="flex items-start mb-3">
+                        <div class="bg-pink-100 text-pink-600 p-2 rounded-full mr-4">
+                            <i class="fas fa-check-circle text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">Fornecedores 100% Verificados</h3>
+                    </div>
+                    <p class="text-gray-600 ml-14">Nenhum golpe! Todos os fornecedores são testados e aprovados por nossa equipe.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                    <div class="flex items-start mb-3">
+                        <div class="bg-pink-100 text-pink-600 p-2 rounded-full mr-4">
+                            <i class="fas fa-tags text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">Preços de Fábrica</h3>
+                    </div>
+                    <p class="text-gray-600 ml-14">Economize até 70% por peça comprando diretamente dos fabricantes.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                    <div class="flex items-start mb-3">
+                        <div class="bg-pink-100 text-pink-600 p-2 rounded-full mr-4">
+                            <i class="fas fa-book text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">Catálogo Atualizado</h3>
+                    </div>
+                    <p class="text-gray-600 ml-14">Moda Feminina, Masculina, Infantil e Plus Size com fotos e preços atualizados.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                    <div class="flex items-start mb-3">
+                        <div class="bg-pink-100 text-pink-600 p-2 rounded-full mr-4">
+                            <i class="fas fa-gift text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">4 Bônus Exclusivos</h3>
+                    </div>
+                    <p class="text-gray-600 ml-14">Planilha Financeira + Ebooks de Instagram, Facebook e WhatsApp para alavancar suas vendas.</p>
+                </div>
+            </div>
+            
+            <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-6 text-center mb-8">
+                <h3 class="text-xl font-bold text-gray-800 mb-2">TOTAL DE BÔNUS: <span class="text-pink-600">R$238</span></h3>
+                <p class="text-lg font-bold">HOJE VOCÊ LEVA TUDO DE GRAÇA!</p>
+            </div>
+            
+            <div class="text-center">
+                <a href="#" class="inline-block bg-pink-600 hover:bg-pink-700 text-white font-bold py-4 px-8 rounded-full pulse-button text-lg transition-all duration-300 transform hover:scale-105 mb-6">
+                    🚀 QUERO MEU ACESSO VIP AGORA! (R$47) 🚀
+                </a>
+                
+                <div class="bg-pink-100 border border-pink-300 rounded-lg p-3 inline-block">
+                    <p class="text-pink-800 font-bold"><i class="fas fa-lock text-pink-600 mr-2"></i> Pagamento 100% seguro</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-12 px-4 bg-gray-50">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-8">
+                <span class="border-b-4 border-pink-600 pb-2">O QUE NOSSOS CLIENTES DIZEM</span>
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-6 mb-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-pink-600 text-white rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Ana Paula R.</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Em 2 meses meu faturamento triplicou! Comprei blusas por R$9 e vendi por R$59. O guia me salvou de vários golpes que quase caí antes."</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-pink-600 text-white rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Marcos A.</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Os bônus valem mais que o guia! A planilha financeira me ajudou a organizar meu negócio e os ebooks me ensinaram a vender muito mais."</p>
+                </div>
+            </div>
+            
+            <div class="bg-pink-600 text-white p-6 rounded-lg text-center">
+                <h3 class="text-xl font-bold mb-2">⚠️ APENAS 37 VAGAS DISPONÍVEIS (ESGOTANDO RÁPIDO!)</h3>
+                <p class="mb-4">Não perca essa oportunidade única de transformar seu negócio!</p>
+                <a href="#" class="inline-block bg-white hover:bg-gray-100 text-pink-600 font-bold py-3 px-6 rounded-full text-lg transition-all duration-300 transform hover:scale-105">
+                    <i class="fas fa-crown mr-2"></i> GARANTIR MEU ACESSO VIP
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bonuses -->
+    <section class="py-12 px-4 bg-white">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-8">
+                <span class="border-b-4 border-pink-600 pb-2">SEUS BÔNUS EXCLUSIVOS</span>
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-6 mb-8">
+                <div class="bg-pink-50 border border-pink-200 rounded-lg p-6 flex">
+                    <div class="bg-pink-600 text-white rounded-full w-16 h-16 flex items-center justify-center mr-4 flex-shrink-0">
+                        <i class="fas fa-file-excel text-2xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Bônus #1: Planilha de Controle Financeiro</h3>
+                        <p class="text-gray-600">Valor sozinha: R$97</p>
+                        <p class="text-pink-600 font-bold mt-2">HOJE VOCÊ LEVA DE GRAÇA!</p>
+                    </div>
+                </div>
+                
+                <div class="bg-pink-50 border border-pink-200 rounded-lg p-6 flex">
+                    <div class="bg-pink-600 text-white rounded-full w-16 h-16 flex items-center justify-center mr-4 flex-shrink-0">
+                        <i class="fab fa-instagram text-2xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Bônus #2: Ebook "Como Vender no Instagram"</h3>
+                        <p class="text-gray-600">Valor sozinha: R$47</p>
+                        <p class="text-pink-600 font-bold mt-2">HOJE VOCÊ LEVA DE GRAÇA!</p>
+                    </div>
+                </div>
+                
+                <div class="bg-pink-50 border border-pink-200 rounded-lg p-6 flex">
+                    <div class="bg-pink-600 text-white rounded-full w-16 h-16 flex items-center justify-center mr-4 flex-shrink-0">
+                        <i class="fab fa-facebook text-2xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Bônus #3: Ebook "Divulgação em Grupos de Facebook"</h3>
+                        <p class="text-gray-600">Valor sozinha: R$37</p>
+                        <p class="text-pink-600 font-bold mt-2">HOJE VOCÊ LEVA DE GRAÇA!</p>
+                    </div>
+                </div>
+                
+                <div class="bg-pink-50 border border-pink-200 rounded-lg p-6 flex">
+                    <div class="bg-pink-600 text-white rounded-full w-16 h-16 flex items-center justify-center mr-4 flex-shrink-0">
+                        <i class="fab fa-whatsapp text-2xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Bônus #4: Ebook "Vendas Explosivas no WhatsApp"</h3>
+                        <p class="text-gray-600">Valor sozinha: R$57</p>
+                        <p class="text-pink-600 font-bold mt-2">HOJE VOCÊ LEVA DE GRAÇA!</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-yellow-50 border border-yellow-300 rounded-lg p-6 text-center mb-8">
+                <h3 class="text-2xl font-bold text-gray-800 mb-2">VALOR TOTAL DOS BÔNUS: <span class="text-pink-600">R$238</span></h3>
+                <p class="text-lg">Mas hoje você recebe tudo isso <span class="font-bold text-pink-600">GRATUITAMENTE</span> com seu acesso VIP!</p>
+            </div>
+            
+            <div class="text-center">
+                <a href="#" class="inline-block bg-pink-600 hover:bg-pink-700 text-white font-bold py-4 px-8 rounded-full pulse-button text-lg transition-all duration-300 transform hover:scale-105 mb-6">
+                    💎 QUERO TODOS OS BÔNUS + ACESSO VIP! 💎
+                </a>
+                
+                <div class="bg-pink-100 border border-pink-300 rounded-lg p-3 inline-block">
+                    <p class="text-pink-800 font-bold"><i class="fas fa-credit-card text-pink-600 mr-2"></i> Parcelamos em até 12x no cartão</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-12 px-4 bg-gray-50">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-8">
+                <span class="border-b-4 border-pink-600 pb-2">PERGUNTAS FREQUENTES</span>
+            </h2>
+            
+            <div class="space-y-4 mb-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2 flex items-center">
+                        <i class="fas fa-question-circle text-pink-600 mr-3"></i> Como sei que os fornecedores são confiáveis?
+                    </h3>
+                    <p class="text-gray-600 ml-8">Todos os fornecedores são testados e aprovados por nossa equipe antes de entrar no guia. Temos um rigoroso processo de verificação que inclue compra-teste, análise de qualidade e feedback de outros lojistas.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2 flex items-center">
+                        <i class="fas fa-money-bill-wave text-pink-600 mr-3"></i> Posso pagar no boleto?
+                    </h3>
+                    <p class="text-gray-600 ml-8">Sim! Aceitamos boleto bancário com 10% de desconto ou parcelamento em até 12x no cartão de crédito. O pagamento é processado por uma plataforma 100% segura.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2 flex items-center">
+                        <i class="fas fa-undo text-pink-600 mr-3"></i> E se eu não gostar?
+                    </h3>
+                    <p class="text-gray-600 ml-8">Oferecemos uma garantia incondicional de 7 dias. Se por qualquer motivo você não ficar satisfeito, basta nos enviar um e-mail e devolvemos 100% do seu dinheiro, sem perguntas.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2 flex items-center">
+                        <i class="fas fa-shipping-fast text-pink-600 mr-3"></i> Como recebo o acesso ao guia?
+                    </h3>
+                    <p class="text-gray-600 ml-8">O acesso é liberado imediatamente após a confirmação do pagamento. Você recebe um e-mail com login e senha para acessar nossa área de membros, onde pode baixar o guia e todos os bônus em formato digital.</p>
+                </div>
+            </div>
+            
+            <div class="bg-pink-600 text-white p-6 rounded-lg text-center">
+                <h3 class="text-xl font-bold mb-4">NÃO PERCA ESSA OPORTUNIDADE ÚNICA!</h3>
+                <p class="mb-4">Aproveite agora por apenas <span class="text-2xl font-bold">R$47</span> (valor real R$97)</p>
+                <a href="#" class="inline-block bg-white hover:bg-gray-100 text-pink-600 font-bold py-3 px-6 rounded-full text-lg transition-all duration-300 transform hover:scale-105">
+                    <i class="fas fa-lock mr-2"></i> COMPRAR COM SEGURANÇA
+                </a>
+                <p class="mt-4 text-sm"><i class="fas fa-shield-alt mr-2"></i> Sua informação está protegida. Não compartilhamos seus dados.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lead Capture -->
+    <section class="py-12 px-4 bg-gradient-to-b from-pink-100 to-white">
+        <div class="container mx-auto max-w-2xl text-center">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                Quer um gostinho antes de comprar?
+            </h2>
+            <p class="text-gray-700 mb-6">Cadastre seu e-mail e receba GRATUITAMENTE uma lista com 10 fornecedores verificados para você começar hoje mesmo!</p>
+            
+            <form class="mb-6">
+                <div class="flex flex-col md:flex-row gap-2">
+                    <input type="email" placeholder="Seu melhor e-mail" class="flex-grow px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500">
+                    <button type="submit" class="bg-pink-600 hover:bg-pink-700 text-white font-bold px-6 py-3 rounded-lg transition-all duration-300">
+                        <i class="fas fa-paper-plane mr-2"></i> ENVIAR
+                    </button>
+                </div>
+            </form>
+            
+            <p class="text-sm text-gray-500">Prometemos não enviar spam. Você pode cancelar sua inscrição a qualquer momento.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 px-4">
+        <div class="container mx-auto max-w-4xl">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-6">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-2xl font-bold text-pink-400">Rosa VIP Fornecedores</h3>
+                    <p class="text-gray-400">O guia definitivo para lojistas de sucesso</p>
+                </div>
+                
+                <div class="flex space-x-4">
+                    <a href="#" class="bg-gray-800 hover:bg-gray-700 text-white w-10 h-10 rounded-full flex items-center justify-center">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="bg-gray-800 hover:bg-gray-700 text-white w-10 h-10 rounded-full flex items-center justify-center">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="bg-gray-800 hover:bg-gray-700 text-white w-10 h-10 rounded-full flex items-center justify-center">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-6 text-center text-gray-400 text-sm">
+                <p>© 2025 Rosa VIP Fornecedores. Todos os direitos reservados.</p>
+                <p class="mt-2">
+                    <a href="#" class="hover:text-pink-400 mr-4">Termos de Uso</a>
+                    <a href="#" class="hover:text-pink-400 mr-4">Política de Privacidade</a>
+                    <a href="#" class="hover:text-pink-400">Contato</a>
+                </p>
+                <p class="mt-4">Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook. Depois que você sair do Facebook, a responsabilidade não é deles e sim do nosso site. Fazemos todos os esforços para indicar claramente e mostrar todas as provas do produto e usamos resultados reais.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="#" class="bg-green-500 hover:bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg transform hover:scale-110 transition-all duration-300">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+    </div>
+
+    <script>
+        // Countdown Timer
+        function startTimer(duration, display) {
+            let timer = duration, minutes, seconds;
+            const interval = setInterval(function () {
+                minutes = parseInt(timer / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                display.textContent = "00:" + minutes + ":" + seconds;
+
+                if (--timer < 0) {
+                    clearInterval(interval);
+                    display.textContent = "OFERTA ENCERRADA!";
+                    document.querySelector('.flashing').style.backgroundColor = '#ef4444';
+                }
+            }, 1000);
+        }
+
+        window.onload = function () {
+            const fiveMinutes = 60 * 60, // 1 hour for demo purposes
+                display = document.querySelector('#timer');
+            startTimer(fiveMinutes, display);
+        };
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+<p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img src="https://enzostvs-deepsite.hf.space/logo.svg" alt="DeepSite Logo" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0) invert(1);"><a href="https://enzostvs-deepsite.hf.space" style="color: #fff;text-decoration: underline;" target="_blank" >DeepSite</a> - 🧬 <a href="https://enzostvs-deepsite.hf.space?remix=Wilson1177/lista-rosa" style="color: #fff;text-decoration: underline;" target="_blank" >Remix</a></p></body>
+</html>
