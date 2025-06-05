@@ -1,1 +1,1 @@
-alterar todos os botoes de CTA para essa URL https://pay.braip.co/checkout/plaovde2/chek9k4p abrir na mesma aba.
+alterar todos os url dos botoes de cta para esse https://ev.braip.com/checkout/plaovde2/chek9k4p o mesmo deverá abrir na mesma aba.
